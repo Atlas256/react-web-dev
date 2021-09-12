@@ -15,7 +15,7 @@ export default function RestAPI () {
                     <MyButton
                         fontSize="100%" width="200px" background="#FA0">Создать</MyButton>
                     <MyButton
-                        fontSize="100%" width="200px" background="#F80">Получить</MyButton>
+                        fontSize="100%" width="200px" background="red">Получить</MyButton>
                 </div>
             </form>
         </div>
