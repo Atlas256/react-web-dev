@@ -1,0 +1,26 @@
+.MyInput {
+
+    display: block;
+
+    width: 200px;
+
+    padding: 0% 0.5%;
+
+    background: #EEE;
+    border: 1px solid #0002;
+
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    color: #AAA;
+
+    transform-origin: 0 0;
+
+    transition: 0.1s linear;
+}
+
+.MyInput:focus {
+    /*filter: brightness(105%);*/
+    border: 1px solid #0004;
+}

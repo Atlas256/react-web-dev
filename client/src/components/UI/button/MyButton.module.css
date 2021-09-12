@@ -1,0 +1,26 @@
+.MyButton {
+
+    display: block;
+
+    padding: 1% 1.5%;
+
+    background: rgb(211, 210, 210);
+    border: 1px solid #0002;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    color: #FFF;
+
+    transform-origin: 0 0;
+
+
+    transition: 0.1s linear;
+}
+
+.MyButton:active {
+    filter: brightness(90%);
+}
+
