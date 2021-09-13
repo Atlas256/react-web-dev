@@ -1,4 +1,4 @@
-import componentList from '../componentList';
+import componentList from '../../componentList';
 
 let localStorage = JSON.parse(window.localStorage.getItem('currentPage'));
 
