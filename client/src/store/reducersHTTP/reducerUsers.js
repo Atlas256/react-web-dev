@@ -3,7 +3,7 @@ const init = {
 }
 
 
-export const reducerUsers= (state = init, action) => {
+export const reducerUsers = (state = init, action) => {
 
     switch (action.type) {
 

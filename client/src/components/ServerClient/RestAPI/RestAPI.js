@@ -6,14 +6,14 @@ import { fetchUsers } from "../../../store/asyncActions/users";
 import { useEffect } from "react";
 
 
-export default function RestAPI () {
+export default function RestAPI() {
 
     const dispatch = useDispatch();
     const users = useSelector(state => state.reducerUsers.fetchUsers);
 
 
     useEffect(() => dispatch(fetchUsers()), [])
-    
+
 
     return (
         <div>
@@ -24,18 +24,21 @@ export default function RestAPI () {
                     fontSize="75%" />
                 <div className="btns">
                     <MyButton
-                        fontSize="100%" width="200px" background="#FA0">Создать</MyButton>
+                        fontSize="100%" width="200px" background="#FA0">
+                        Создать</MyButton>
                     <MyButton
-                    onClick={() => dispatch(fetchUsers())}
-                        fontSize="100%" width="200px" background="#F80">Получить</MyButton>
+                        onClick={() => dispatch(fetchUsers())}
+                        fontSize="100%" width="200px" background="#F80">
+                        Получить</MyButton>
+
                 </div>
             </div>
 
             <div>
-                {(users) ? 
-                users.map(user => <div><img src={user.url} alt="" />{user.url}</div> )
-                :
-                null}
+                {(users) ?
+                    users.map(user => <div><img src={user.url} alt="" />{user.url}</div>)
+                    :
+                    null}
             </div>
         </div>
     )
