@@ -1,5 +1,5 @@
 const init = {
-    users: []
+    fetchUsers: []
 }
 
 
@@ -7,8 +7,8 @@ export const reducerUsers= (state = init, action) => {
 
     switch (action.type) {
 
-        case "GET_USERS":
-            return { ...state, users: [...action.payload] }
+        case "FETCH_USERS":
+            return { ...state, fetchUsers: [...action.payload] }
 
         default:
             return state;
