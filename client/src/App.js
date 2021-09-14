@@ -1,5 +1,6 @@
 import './styles/null.css';
 import './styles/App.css';
+import './fontAwesome/styles/fontAwesome.css'
 
 import Header from './components/Header/Header.jsx'
 import Page from './components/Page/Page.jsx';

@@ -19,7 +19,9 @@ const URL =
 const fetchUsers = async () => {
     const res = await fetch(URL);
     return await res.json();
-    
 }
+
+    //saga
+    //useEffect(() => dispatch({ type: "REQUEST_POSTS" }), [])
 
 

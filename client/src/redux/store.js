@@ -14,8 +14,8 @@ const rootReducer = combineReducers({
 })
 
 
-const saga = createSagaMiddleware();
+//const saga = createSagaMiddleware();
 
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware( saga)));
+export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware( thunk )));
 
-saga.run(sagaWatcher);
+//saga.run(sagaWatcher);

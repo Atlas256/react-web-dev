@@ -1,0 +1,57 @@
+.user-item {
+  border: 1px solid #0002;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-item * {
+  border-radius: inherit;
+  font-size: 100%;
+}
+
+.user-item .user-info {
+  width: 100%;
+}
+
+.user-item .user-item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  cursor: pointer;
+}
+
+.user-item .user-item-right .btn-edit {
+  color: #4935ff;
+  border-right: 1px solid #0002;
+  padding: 5px;
+}
+
+.user-item .user-item-right .btn-delete {
+  color: #f83e3e;
+  padding: 5px;
+}
+
+.btn {
+  -webkit-transition: 0.1s -webkit-transform;
+  transition: 0.1s -webkit-transform;
+  transition: 0.1s transform;
+  transition: 0.1s transform, 0.1s -webkit-transform;
+}
+
+.btn:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}

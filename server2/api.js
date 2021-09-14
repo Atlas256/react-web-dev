@@ -39,5 +39,15 @@ router.delete("/users/:id", (req, res) => {
         })
 });
 
+//?----------------------------------------------------
+
+router.get("/users/last", (req, res) => {
+
+    User.findOne({}).sort({_id: -1})
+        .then(user => {
+            res.send(user)
+        })
+});
+
 
 module.exports = router;

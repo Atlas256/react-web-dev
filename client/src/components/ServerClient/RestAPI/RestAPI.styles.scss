@@ -1,0 +1,50 @@
+.user-item {
+
+    border: 1px solid #0002;
+    border-radius: 3px;
+
+    padding: 5px;
+
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    * {
+        border-radius: inherit;
+        font-size: 100%;
+    }
+
+    .user-info {
+        width: 100%;
+    }
+
+    .user-item-right {
+
+        display: flex;
+        justify-content: right;
+
+        cursor: pointer;
+
+        .btn-edit {
+            color: rgb(73, 53, 255);
+            border-right: 1px solid #0002;
+            padding: 5px;
+        }
+
+        .btn-delete {
+            color: rgb(248, 62, 62);
+            padding: 5px;
+        }
+    }
+}
+
+.btn {
+    transition: 0.1s transform;
+}
+.btn:hover {
+    transform: rotate(5deg);
+}
+
+

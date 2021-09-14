@@ -1,12 +1,12 @@
 const { log_ok, log_info, log_error } = require("./consoleColor");
 const express = require('express');
 const mongoose = require('mongoose');
-//const cors = require('cors');
+const cors = require('cors');
 
 
 const app = express();
 app.use(express.json());
-//app.use(cors());
+app.use(cors());
 
 
 mongoose.connect("mongodb://localhost/user-db")
